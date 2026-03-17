@@ -1,78 +1,178 @@
-# 🌟 AutoGPT: the heart of the open-source agent ecosystem
+<div align="center">
 
-[![Discord Follow](https://dcbadge.vercel.app/api/server/autogpt?style=flat)](https://discord.gg/autogpt) [![GitHub Repo stars](https://img.shields.io/github/stars/Significant-Gravitas/AutoGPT?style=social)](https://github.com/Significant-Gravitas/AutoGPT/stargazers) [![Twitter Follow](https://img.shields.io/twitter/follow/auto_gpt?style=social)](https://twitter.com/Auto_GPT) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Vaccination Project
+### Strategic Workstream Charter · Task Assignment Sheet · Delivery 
 
-**AutoGPT** is your go-to toolkit for supercharging agents. With its modular and extensible framework, you're empowered to focus on:
+<p><em>Model stability • evidence quality • optimization clarity • submission readiness</em></p>
 
-- 🏗️ **Building** - Lay the foundation for something amazing.
-- 🧪 **Testing** - Fine-tune your agent to perfection.
-- 👀 **Viewing** - See your progress come to life.
+<p>
+  <img alt="Workflow" src="https://img.shields.io/badge/Workflow-Stage--Gated%20Collaboration-0F4C81?style=for-the-badge">
+  <img alt="Preview" src="https://img.shields.io/badge/Format-GitHub%20Preview%20Ready-2E7D32?style=for-the-badge">
+  <img alt="Standard" src="https://img.shields.io/badge/Standard-Reproducibility%20First-B36B00?style=for-the-badge">
+</p>
 
-Be part of the revolution! **AutoGPT** stays at the forefront of AI innovation, featuring the codebase for the reigning champion in the Open-Source ecosystem.
+</div>
 
 ---
 
-<p align="center">
-  <a href="https://lablab.ai/event/autogpt-arena-hacks">
-    <img src="https://lablab.ai/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Flablab-static-eu%2Fimages%2Fevents%2Fcll6p5cxj0000356zslac05gg%2Fcll6p5cxj0000356zslac05gg_imageLink_562z1jzj.jpg&w=1080&q=75" alt="AutoGPT Arena Hacks Hackathon" />
-  </a>
-</p>
-<p align="center">
-  <strong>We're hosting a Hackathon!</strong>
-  <br>
-  Click the banner above for details and registration!
-</p>
+## Executive summary
+
+This repository is the coordination layer for the vaccination project. The work is deliberately organized into three linked workstreams so that the final recommendation is not only complete, but also logically staged, statistically defensible, and easy to justify in the final submission.
+
+> [!IMPORTANT]
+> The operating order is strict: **stabilize the simulator first**, **build statistically reliable evidence second**, and **finalize the optimized policy and final report narrative last**.
+
+> [!TIP]
+> In the detailed workload tables, each team member should replace only the `—` entries in their own section. Keep the **work package names unchanged** so the full document remains aligned and professional.
 
 ---
 
-## 🥇 Current Best Agent: AutoGPT
+## Workflow logic
 
-Among our currently benchmarked agents, AutoGPT scores the best. This will change after the hackathon - the top-performing generalist agent will earn the esteemed position as the primary AutoGPT 🎊
+```mermaid
+flowchart LR
+    A["🔬 Workstream I<br/>Model formulation & simulator QA<br/>Mi-Lane Bouchez"] --> B["📊 Workstream II<br/>Evidence, precision & visualization<br/>Anne-Valérie Preto"]
+    B --> C["🎯 Workstream III<br/>Control, optimization & final integration<br/>Ahmad Majdouba"]
 
-📈 To enter, submit your benchmark run through the UI.
-
-## 🌟 Quickstart
-
-- **To build your own agent** and to be eligible for the hackathon, follow the quickstart guide [here](https://github.com/Significant-Gravitas/AutoGPT/blob/master/autogpts/forge/tutorials/001_getting_started.md). This will guide you through the process of creating your own agent and using the benchmark and user interface.
-
-- **To activate the best agent** follow the guide [here](https://github.com/Significant-Gravitas/AutoGPT/blob/master/autogpts/autogpt/README.md).
-
-Want to build your own groundbreaking agent using AutoGPT? 🛠️ There are three major components to focus on:
-
-### 🏗️ the Forge
-
-**Forge your future!** The `forge` is your innovation lab. All the boilerplate code is already handled, letting you channel all your creativity into building a revolutionary agent. It's more than a starting point, it's a launchpad for your ideas. All tutorials are located [here](https://medium.com/@aiedge/autogpt-forge-e3de53cc58ec).
-
-📘 [Learn More](https://github.com/Significant-Gravitas/AutoGPT/tree/master/autogpts/forge)
-
-### 🎯 the Benchmark
-
-**Test to impress!** The `benchmark` offers a stringent testing environment. Our framework allows for autonomous, objective performance evaluations, ensuring your agents are primed for real-world action.
-
-📘 [Learn More](https://github.com/Significant-Gravitas/AutoGPT/blob/master/benchmark)
-
-### 🎮 the UI
-
-**Take Control!** The `frontend` is your personal command center. It gives you a user-friendly interface to control and monitor your agents, making it easier to bring your ideas to life.
-
-📘 [Learn More](https://github.com/Significant-Gravitas/AutoGPT/tree/master/frontend)
+    A -. simulator API + pilot outputs + QA memo .-> B
+    B -. precision diagnostics + figures + paired comparisons .-> C
+```
 
 ---
 
-### 🔄 Agent Protocol
+## High-level team architecture
 
-🔌 **Standardize to Maximize!** To maintain a uniform standard and ensure seamless compatibility, AutoGPT employs the [agent protocol](https://agentprotocol.ai/) from the AI Engineer Foundation. This standardizes the communication pathways from your agent to the frontend and benchmark.
+| Phase | Lead | Share | Strategic mandate | Dependency role |
+|---|---|---:|---|---|
+| I | **Mi-Lane Bouchez** | 33.3% | Model formulation, policy classes, simulator, and QA | Unlocks large-scale experimentation |
+| II | **Anne-Valérie Preto** | 33.3% | Metrics, Monte Carlo design, bootstrap, common random numbers, and visualization | Depends on validated outputs from Phase I |
+| III | **Ahmad Majdouba** | 33.3% | Control analysis, optimization, final recommendation, and report integration | Uses validated outputs from Phases I and II |
 
-### 🤔 Questions? Problems? Suggestions?
+---
 
-#### Get help - [Discord 💬](https://discord.gg/autogpt)
+## Governance and completion rules
 
-[![Join us on Discord](https://invidget.switchblade.xyz/autogpt)](https://discord.gg/autogpt)
+| Rule | Standard |
+|---|---|
+| Ownership | Each member completes their own workstream first |
+| Table entries | Replace `—` with concise, concrete, professional wording |
+| File references | Use repository paths in backticks, such as `src/config.py` |
+| Acceptance checks | Write clear, testable completion criteria |
+| Priority tags | Use `High`, `Medium`, or `Low` |
+| Consistency | Keep terminology aligned across all workstreams |
 
-To report a bug or request a feature, create a [GitHub Issue](https://github.com/Significant-Gravitas/AutoGPT/issues/new/choose). Please ensure someone else hasn’t created an issue for the same topic.
+---
 
-<p align="center">
-  <a href="https://star-history.com/#Significant-Gravitas/AutoGPT&Date">
-    <img src="https://api.star-history.com/svg?repos=Significant-Gravitas/AutoGPT&type=Date" alt="Star History Chart">
-  </a>
-</p>
+## Quality gates
+
+| Gate | Owner | Minimum condition to pass |
+|---|---|---|
+| **Simulator gate** | Mi-Lane Bouchez | State conservation, non-negativity, dose-cap compliance, and reproducible seeded runs |
+| **Evidence gate** | Anne-Valérie Preto | Replication protocol, precision diagnostics, variance-reduction checks, and report-ready figures |
+| **Decision gate** | Ahmad Majdouba | Traceable optimization log, validated frontier, and final recommendation approved after evidence sign-off |
+
+---
+
+## 🟢 Workstream I — Mi-Lane Bouchez  
+### Model formulation and simulator QA
+
+> **Mission**  
+> Own the mathematical transcription of the project brief and the internal reliability of the simulator. No large-scale experimentation should begin before this package is stable.
+
+### Core checklist
+- [ ] Convert the project brief into code constants: population, initial conditions, contact matrix, `λ`, transition probabilities, horizon, daily dose cap, and the adult-loss definition.  
+- [ ] Implement all requested baseline policies and the new three-phase family: no vaccination, elders-first, adults-first, children-first, 20-dose round robin, proportional shares, and phase-threshold policies.  
+- [ ] Build deterministic mean-field and stochastic Monte Carlo simulators with the exact daily update order.  
+- [ ] Run automatic QA checks for conservation, non-negativity, dose-cap compliance, and policy switching.  
+- [ ] Export pilot outputs in clean CSV format and provide a data dictionary for Anne and Ahmad.  
+
+### Detailed workload table
+
+| Work package | Exact task | Expected outcome | Primary file owner | Acceptance check | Priority |
+|---|---|---|---|---|---|
+| Model specification | — | — | — | — | — |
+| Policy implementation | — | — | — | — | — |
+| Simulation engine | — | — | — | — | — |
+| Verification and QA | — | — | — | — | — |
+| Raw outputs handoff | — | — | — | — | — |
+
+### Handoff standard
+Deliver a clean simulator API and pilot CSV outputs before Anne-Valérie Preto begins the headline Monte Carlo experiments. Document implementation assumptions immediately so the downstream work does not depend on a hidden modeling mismatch. Provide a short validation note proving state conservation and dose-cap compliance.
+
+---
+
+## 🟠 Workstream II — Anne-Valérie Preto  
+### Evidence, precision, and visualization
+
+> **Mission**  
+> Own the quality of the evidence. Transform raw simulation outputs into trustworthy estimates, upper-tail risk measures, and report-ready figures.
+
+### Core checklist
+- [ ] Define the report metrics: mean deaths, p90/p95 deaths, mean loss, p90/p95 loss, peak infected, achieved coverage, and deaths by age group.  
+- [ ] Choose replication counts for screening, headline policies, and paired comparisons; document the seed strategy and runtime budget.  
+- [ ] Implement bootstrap precision diagnostics for means and upper-tail metrics.  
+- [ ] Run common-random-number paired experiments and quantify the variance-reduction gain.  
+- [ ] Produce publication-ready tables and figures for the report.  
+- [ ] Write the risk-interpretation subsection explaining why upper-tail metrics matter.  
+
+### Detailed workload table
+
+| Work package | Exact task | Expected outcome | Primary file owner | Acceptance check | Priority |
+|---|---|---|---|---|---|
+| Metrics design | — | — | — | — | — |
+| Monte Carlo plan | — | — | — | — | — |
+| Bootstrap precision | — | — | — | — | — |
+| Variance reduction | — | — | — | — | — |
+| Result visualization | — | — | — | — | — |
+| Interpretation of risk | — | — | — | — | — |
+
+### Handoff standard
+Use the seeds and replication plan consistently so Ahmad can compare optimization candidates under the same statistical protocol. Flag any benchmark comparison whose confidence interval overlaps materially, because those cases need more replications before the final report. Hand over final tables and publication-ready figures in report-ready form.
+
+---
+
+## 🔵 Workstream III — Ahmad Majdouba  
+### Control, optimization, and final integration
+
+> **Mission**  
+> Own the control question, the search for the best policy, and the final integrated recommendation. This workstream turns the simulator into a decision-support tool.
+
+### Core checklist
+- [ ] Derive the linearized infected-dynamics matrix, compute the spectral-radius control criterion, and estimate uniform and targeted dose thresholds.  
+- [ ] Define the three-phase policy family with decision variables `(order, q1, q2)` and justify the search space.  
+- [ ] Run a global screen, extract the deterministic Pareto set, and perform local refinement around the most promising regions.  
+- [ ] Validate the frontier stochastically and choose the death-optimal, balanced, and loss-optimal policies.  
+- [ ] Assemble the final report, reproducibility package, and presentation storyline.  
+
+### Detailed workload table
+
+| Work package | Exact task | Expected outcome | Primary file owner | Acceptance check | Priority |
+|---|---|---|---|---|---|
+| Controllability analysis | — | — | — | — | — |
+| Optimization model | — | — | — | — | — |
+| Global search + local refinement | — | — | — | — | — |
+| Frontier interpretation | — | — | — | — | — |
+| Final integration | — | — | — | — | — |
+
+### Handoff standard
+Do not finalize the recommendation until Anne-Valérie Preto signs off on the precision diagnostics. Keep a traceable search log covering the candidate set, filtered frontier, refined neighborhood, and final selected policies. Package the report, PDF, source code, and result CSV files into one reproducible folder.
+
+---
+
+## Milestone pathway
+
+| Milestone | Lead | Required output | Why it matters |
+|---|---|---|---|
+| **Milestone 1** | Mi-Lane Bouchez | Stable simulator, policy API, and QA memo | Unlocks benchmark experimentation |
+| **Milestone 2** | Anne-Valérie Preto | Benchmark tables, precision diagnostics, and figures | Unlocks final policy comparison and recommendation text |
+| **Milestone 3** | Ahmad Majdouba | Control analysis, optimized policy set, integrated report, and ZIP package | Final submission-ready deliverable |
+
+---
+
+## Final principle
+
+<div align="center">
+
+### Build carefully · Measure rigorously · Optimize transparently · Deliver confidently
+
+</div>
